@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="script.js" defer></script>
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <main class="main-container">
+         <h1>ROCK, PAPER, SCISSOR, SHOOT!</h1>
+         <h3>PICK ONE</h3>
+         <div class="rps-container">
+            <button data-select="rock">✊</button>
+            <button data-select="paper">✋</button>
+            <button data-select="scissor">✌️</button>
+         </div>
+         <div class="table-container">
+            <div class="header">
+               <h5>YOUR PICK</h5>
+               <h5>RESULT</h5>
+               <h5>🤖 PICK</h5>
+            </div>
+            <div class="body"></div>
+         </div>
+
+         <div class="details-board">
+            <div>
+               <h4>Wins:</h4>
+               <h5 id="win"></h5>
+            </div>
+            <div>
+               <h4>Losses:</h4>
+               <h5 id="loss"></h5>
+            </div>
+            <div>
+               <h4>Draws:</h4>
+               <h5 id="draw"></h5>
+            </div>
+            <div>
+               <h4>Total Match:</h4>
+               <h5 id="totalMatch"></h5>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
