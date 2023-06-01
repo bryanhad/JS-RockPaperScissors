@@ -41,16 +41,17 @@ body{
 @media (width <= 1256px) {
     .main-container>.details-board{
         color: #828282;
-        display: flex;
-        gap: 10px;
-        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        width: 75vw;
         justify-content: center;
         padding: 0.5rem 0 0 0;
         left: 50%;
         transform: translateX(-50%);
     }
     .main-container>h1{
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     .main-container>.table-container>.header>h5{
         background-color: rgb(230, 230, 230);
@@ -86,7 +87,7 @@ body{
 .main-container{
     width: 100%;
     max-width: 1200px;
-    margin: 5rem auto 0;
+    margin: 3rem auto 0;
     padding: 2rem;
     background-color: whitesmoke;
     border-radius: 1rem;
@@ -144,9 +145,12 @@ body{
     font-weight: 500;
     text-align: center;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
 .table-container>.body{
+    margin-top: 1rem;
     max-height: 500px;
     overflow: scroll;
     overflow-x: hidden;
