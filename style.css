@@ -2,17 +2,91 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     background-color: rgb(150, 150, 150);
-    padding-top: 5rem;
+    padding: 0 20px;
+}
+
+@media (width <= 600px) {
+    .main-container>h1{
+        text-align: center;
+        font-size: large;
+    }
+    .main-container>h3{
+        text-align: center;
+        font-size: large;
+    }
+    .main-container>.rps-container{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-container>.rps-container>button{
+        background: none;
+        border: none;
+        border-radius: 50%;
+        width: 5.5rem;
+        height: 5.5rem;
+        text-align: center;
+        cursor: pointer;
+        font-size: 4rem;
+        transition: 300ms;
+    }
+    
+}
+@media (width <= 1256px) {
+    .main-container>.details-board{
+        color: #828282;
+        display: flex;
+        gap: 10px;
+        width: 90vw;
+        justify-content: center;
+        padding: 0.5rem 0 0 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-container>h1{
+        padding-top: 1rem;
+    }
+    .main-container>.table-container>.header>h5{
+        background-color: rgb(230, 230, 230);
+        border-radius: 20px;
+        padding: 0.5rem ;
+        font-weight: 500;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .main-container>.table-container{
+        margin-top: 1rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container>.table-container>.body{
+        max-height: 360px;
+    }
+    .main-container>.table-container>.body>section>h3{
+        font-size: 2rem;
+        opacity: 0.5;
+    }
+    .main-container>.table-container>.body>.win>#user{
+        font-size: 3rem;
+        opacity: 1;
+    }
+    .main-container>.table-container>.body>.lose>#bot{
+        font-size: 3rem;
+        opacity: 1;
+    }
 }
 
 .main-container{
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 5rem auto 0;
     padding: 2rem;
     background-color: whitesmoke;
     border-radius: 1rem;
